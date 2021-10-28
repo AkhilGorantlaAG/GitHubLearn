@@ -1,0 +1,96 @@
+GitHub:
+* Multiple developers involved in application development.
+* Application developers will be working from different locations
+
+In this situation we dace two problems:
+---------------------------------------
+1.How to integrate source code?
+2. How to monitor changes happening to source code?
+
+Repository:
+----------
+where our code will be stored and documents related project.
+
+* Every developer will install a client software in their system.
+* Client software is used to interact with version control software.
+
+Developer-->client software--> version control software
+
+It provides solution for 2 problems:
+version control software server : will be on different system.
+
+url,username and password--> for repository.
+image: 1.git
+
+* there are several VCS softwares available:
+        1.CVS
+		2.clear case
+		3.SVN (Sub Version)
+		*4.Git Hub
+		*5.Git Bucket.
+GitHub:
+------
+* It is a provider of internet hosting for software developement and version control using Git.
+   It offers the distributed version control and source management functionality of Git + its own features.
+   * cloud Platform
+   * Microsoft owned
+ * Github is a cloud provider which is providing software version control managemnt using git.
+ * Git hub is implemented in Ruby and it is under license of microsoft.
+ * Using GitHub we can maintain repositories in cloud platform.
+ * In order to create repositories we need to have account in github.
+ 
+ Github-- build, ship and maintain their software on github.
+ 
+ Sign up to Github.
+ Repositories--2:
+ ------------
+ *public and private.
+ 
+Task:
+* create a github account and create repository.
+repo url :https://github.com/AkhilGorantlaAG/GitHubLearn.git
+
+Github connection:
+Git client, GitLab etc.,
+
+Git:
+* Download git client software.
+  git-scm.com/downloads and install it.
+* To communicate with github repositories. we will use gut client software.
+* git client is available in multiple ways:
+   *git bash
+   *git GUI
+   *source tree etc.,
+Task:
+* create a empty folder git practise in your system.
+* establish communication between folder and repository.
+   open folder 
+   git bash--> git init
+                      wiill create a hidden file .git
+			   * Create a simple hello world java program.
+			   * git status
+			            will get status of all files.
+						status -untracked: means file newly created.
+				* git add FileName
+				         will add the new file. it will be added to staging area.
+				* git status
+				* git commit -m 'message'
+				          will be commited to github.
+				* git branch -M main
+				          should commit to main branch in git
+				* git remote add origin url_of_repo
+				           need to run  only once it add url.
+				         check config file before and after add origin we can find that remote url will be added.
+				* git push -u origin branchname
+                  git push -u origin main
+				
+Git commands:
+------------
+* git init
+* git add <fileName>
+* git commit -m 'message'
+* git branch -M main	
+* git remote add origin <repo-URl>
+* git push -u origin main
+
+
