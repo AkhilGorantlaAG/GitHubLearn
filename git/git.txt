@@ -93,4 +93,122 @@ Git commands:
 * git remote add origin <repo-URl>
 * git push -u origin main
 
+* check config folder for remote origin url.
+* .git --> is a hidden folder.
 
+Git Bash Commands:
+-----------------
+1.init
+2.clone
+3.add
+4.status
+5.commit
+6.push 
+7.pull
+8.checkout
+9.reset
+10.log
+11.rm
+12.branchmerge
+13.rebase
+14.stash
+
+We are having several git commands to perform operations with git repository.
+
+Git Bash Commands:
+-----------------
+git help
+--------
+   gives list of all commands 
+git help <cmd-name> --> It opens documentation of that particular command.
+-------------------
+git init:
+-------
+   It is used to create empty repository or reinitialize the existing repository.
+   creates hidden folder .git
+git status:
+----------
+    This command will display the status of the current repository.
+	Staged Files:
+	------------
+	   Files which are added and they are ready to commit.
+	    Green color 
+	Un-Staged Files:
+	---------------
+	      Modified Files will be displayed here, we needto satge these files to commit
+		  Red color
+	Un-Tracked Files:
+	      Newly created files, we need to stage them to commit.
+		    These file names also will be displayed in red color.
+
+git add:
+-------
+   This command is used to add file to staging area.
+       Syntax : git add <fileName>
+                git add --a
+                        --a to add all new files at a time.
+git rm:
+------
+ git rm --cached <file>
+ git rm --cached *
+    to unstage files all files
+git commit:
+---------
+ git commit -m 'message'
+It will commit files to our local system only.
+It will not commit to central repository.
+Git Repository will be available in our machine.
+When we execute commit command it will consider all the files which are in staging area.
+
+git remote add origin <url-of-git>: To add URL
+----------------------------------
+It needed only for fisrt time.
+
+git push -u origin master:
+-------------------------
+It is used to push the changes from local repository to central repository.
+git reset:
+--------
+to unstage a file
+
+git init :
+-------
+   To initialize our folder as git operations folder.
+git status:
+---------
+   To see staged, un-staged and un-tracked files.
+   * staged - Eligible for commit.
+   * unstaged - Modified but not eligible for commit.
+   * untracked - Newly created files.
+git add<filename>:
+-----------------
+    To add file(s) to staging area.
+git add --a:
+------------
+	To add all modified files at a time.
+git commit -m <msg>:
+-------------------
+     To commit staged files to local repo.
+git remote add origin <repo-url>:
+--------------------------------
+     To connect our folder to remote repo.
+git push:
+--------
+     To push changes from local repo to central repo.
+git rm --cache<filename>:
+------------------------
+     To unstage files.
+git clone <url>:
+--------------
+	To clone project from central repo to local system.
+git pull:
+---------
+    To take latest changes from central repo to local repo.
+git checkout <file-name>:
+-----------------------
+    To replace local file with central repo file.
+git log :
+--------
+     To see commit history.
+
+* Add Java File in git folder
